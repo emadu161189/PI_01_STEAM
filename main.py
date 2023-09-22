@@ -39,7 +39,7 @@ def userdata(user_id: str):
     return {"gasto_total_usuario": f"{gasto}", "Porcentaje_recomendacion": f"{porcentaje}", "Items_usuario": f"{items}"}
 
 
-@app.get("/countreviews/{a}")
+@app.get("/countreviews/{fecha}")
 def countreviews(fecha:str):
     fecha = fecha.split('-')
     desde = fecha[0]
